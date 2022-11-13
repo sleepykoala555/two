@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/css.css">
+
+  <title> Responsive Redesign - Craigslist 2.0 </title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="nav">
+     <h3> Responsive Redesign - Craigslist 2.0 </h3> 
+      <div class="menu"></div>
+    </div>
+
+  </div>
+  <div class="main">
+    <div class="left">
+
+      <div class="tips">
+        Navigation bar
+      </div>
+      <ul>
+        <li><a href="#zero"><span>1.</span> Introduction </a></li>
+        <li><a href="#one"><span>2.</span> Website - Craigslist </a></li>
+        <li><a href="#tow"><span>3.</span> Craigslist Usability Problems </a> </li>
+        <li><a href="#four"><span>4.</span> Accessibility Analysis </a>
+        </li>
+        <li><a href="#five"><span>5.</span> Low-fidelity Wireframing </a></li>
+        <li><a href="#six"><span>6.</span> Visual Style Guide </a></li>
+        <li><a href="#seven"><span>7.</span> High-fidelity Prototyping </a></li>
+        <li><a href="#eight"><span>8.</span> Responsive Page & Reference </a></li>
+
+      </ul>
+    </div>
+    <div class="right">
+
+      <div class="stepzero" id="zero">
+        <h1 class="bg0">1. Introduction</h1>
+        <p class="text"> In this project, I will attempt to identify and analyze the various usability problems of the
+          Craigslist website, then redesign the website with prototyping and lastly build a website in HTML/CSS that’s
+          responsive to three different screen frames (desktop, tablet, and phone).
+        </p>
+        <br>
+
+
+      </div>
+
+      <div class="stepone " id="one">
+        <h1 class="bg0">2. Website - Craigslist</h1>
+        <p class="text2">
+          <b> Website Link:</b><a href=" https://sfbay.craigslist.org/"> https://sfbay.craigslist.org/</a>
+        </p>
+        <p class="text2"><b>Introduction:</b> Craigslist (stylized as craigslist) is an American classified advertisements website with sections devoted to jobs, housing, for sale, etc.</p>
+        <p class="text2"><b>Reasons:</b> I’m intending to relocate to San Francisco after my graduation, so I’ve been
+          looking for housing on
+          various websites and applications. The design of Craigslist completely stunned me because it’s so rudimentary
+          despite being one of the most visited websites in the world. When I first used it, I was overwhelmed by the
+          packed information and confused about how to navigate the website effectively to find the house I want.</p>
+        <div class="imgs">
+          <img src="./images/img10.png" alt="On PC and Tablet ">
+          <h5>On PC and Tablet </h5>
+        </div>
+        <div class="imgs imgs2">
+          <img src="./images/img11.png" alt="On Phone">
+          <h5>On Phone </h5>
+        </div>
+      </div>
+
+      <div class="steptwo" id="tow">
+        <h1 class="bg0">3. Craigslist Usability Problems</h1>
+
+        <div class="xuelie">
+
+
+          <ol>
+
+            <li><strong> Overwhelming information</strong> - too much information is given on the same page so it’s hard to navigate
+              and find relevant information.</li>
+            <li><strong>Lack of hierarchy but lots of distractions</strong> - all items have the same weight visually,
+              yet the main lists should be given more emphasis while the lists on the side are very distractive. </li>
+            <li><strong>Lack of visual clues such as icons</strong> - there is no icon or other design that gives a
+              clear visual clue on where to look at. It can be hard to use for people who are not good at reading texts.
+            </li>
+            <li><strong>Not responsive</strong> - the website is not responsive to changes in window sizes on desktops
+              and tablets, so I have to scroll left and right to browse the website. </li>
+            <li><strong>Aesthetics</strong> - Visually, it is horrible to look at the page as a whole, especially for
+              someone with Trypophobia. </li>
+            <li><strong>No preliminary filer</strong> - since there’s no preliminary filter for each sub-category, after
+              I click, for example, “apts/housing”, pictures of many houses will appear while only a few are relevant.
+            </li>
+            <li><strong>Learnability</strong> - The filter and search are difficult to use, which makes it difficult for
+              users to find the items they looking for. </li>
+            <li><strong>Memorability</strong> - it’s hard to remember all the categories and subcategories, so every
+              time I open it and use it. I have to look through the lists again until I find the right one. </li>
+          </ol>
+
+        </div>
+
+      </div>
+
+      <div class="stepfour" id="four">
+        <h1 class="bg0">4. Accessibility Analysis</h1>
+
+        <p class="text2"><b>Wave Report:</b> I use the <a href="https://wave.webaim.org/"> WebAIM WAVE </a>tool to detect possible accessibility problems. Here's what
+        I agree and disagree with findings from the WAVE report. </p>
+
+        <div class="boxtable" id="Oblist0" style="">
+
+
+          <table class="tables" width="100%" border="1" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <th width="50%">Agree </th>
+                <th>Disagree</th>
+              </tr>
+              <tr>
+                <td>
+
+                  <ul>
+                    <li><strong> Alerts for texts too small</strong><span> - I agree because the texts, especially under
+                        the header “discussion forums” are very small and difficult to read. </span> </li>
+                    <li><strong>Missing from label</strong> <span>- I agree since many selected items don’t have
+                        labeling so it’s hard to know how to interact with the items. </span> </li>
+                    <li><strong>Skipping from heading level</strong> <span>- I agree because both “calendar” and “nearby
+                        cl” should be headers but instead, their fonts are not larger, so the hierarchy in texts is not
+                        clear enough. </span> </li>
+                  </ul>
+
+                </td>
+                <td>
+
+                  <ul>
+                    <li> <strong>No errors for contrast</strong> <span>- I was surprised because although there is no
+                        contrast between the white backgrounds and the blue text, all the texts are in very the same
+                        color so there is no contract between texts that highlight their relationships, importance, and
+                        hierarchy. Also, the text turns from blue to dark purple once clicked so there’s no much
+                        contrast.</span>
+
+                    </li>
+                    <li> <strong>No errors for features</strong> <span>- there is a lack of variety in features but only
+                        hypertexts.</span>
+
+                    </li><br>
+                  </ul>
+
+                </td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+         
+        </div>
+        <p class="text2"><b>Conclusion:</b> the accessibility website only tests craigslist according to certain rigid
+          principles but since it cannot process the texts and understand the hierarchy and meanings of information
+          presented on the website, accessibility can capture errors in design principles but not some higher-level
+          accessibility issues. </p>
+      </div>
+
+      <div class="stepfive" id="five">
+        <h1 class="bg0" >5. Low-fidelity Wireframing</h1>
+        <div class="banner fourimg">
+          <img src="./images/img12.png" alt="">
+          <h5>Annotation </h5>
+          <p><br><br></p>
+        </div>
+        <div class="banner fourimg">
+          <img src="./images/img20.png" alt="">
+          <p><br><br></p>
+          <h5>Desktop </h5>
+        </div>
+        <div class="imgs imgs2">
+          <p><br><br><br><br></p>
+          <img src="./images/img18.png" alt="">
+          <h5>Tablet </h5>
+        </div>
+        <div class="imgs">
+          <p><br><br><br><br></p>
+          <img src="./images/img19.png" alt="">
+          <h5>Phone </h5>
+          <p><br><br><br><br></p>
+        </div>
+      </div>
+ 
+      <div class="stepfive" id="six">
+        <h1 class="bg0"> 6.Visual Style Guide</h1>
+        <div class="banner fourimg">
+          <img src="./images/img13.png" alt="">
+        </div>
+      </div>
+
+
+      <div class="stepfive" id="seven">
+        <h1 class="bg0">7.High-fidelity prototyping</h1>
+        <div class="banner fourimg">
+          <p><br><br></p>
+          <img src="./images/img17.png" alt="">
+          <p><br><br></p>
+          <h5>Annotation </h5>
+          <p><br><br><br><br></p>
+        </div>
+        <div class="banner fourimg">
+          <p><br><br></p>
+          <img src="./images/img14.png" alt="">
+          <p><br><br></p>
+          <h5>Desktop </h5>
+          <p><br><br><br><br></p>
+        </div>
+        <div class="imgs imgs3">
+          <img src="./images/img15.png" alt="">
+          <p><br><br></p>
+          <h5>Tablet </h5>
+          <p><br><br><br><br></p>
+        </div>
+        <div class="banner fourimg">
+          <img src="./images/img16.png" alt="">
+          <p><br><br></p>
+          <h5>Phone </h5>
+          <p><br><br><br><br></p>
+        </div>
+      </div>
+      <div class="stepfive" id="eight">
+        <h1 class="bg0">8.Responsive Page & Reference</h1>
+        <p class="text2">
+          Based on the prototyping, I created a responsive website in css/html. 
+            Most of buttons, select bars, bars and photos are interactive, and you're welcome to explore the visual effects. 
+            The link to the website is give below:
+        </p>
+        <p class="text2">
+          <b> Link:</b><a href=" https://sleepykoala555.github.io/craigslist/"> Craigslist 2.0 - responsive redesign page</a>
+        </p>
+        <p class="text2">Reference: the design is inspired by @Janine Beth Salazar on dribbble (https://dribbble.com/shots/16717343-Craigslist-Redesign-Concept). 
+         </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/js.js"></script>
+</body>
+
+</html>
